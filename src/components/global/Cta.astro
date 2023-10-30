@@ -1,36 +1,185 @@
-<section
-  class="relative mx-auto w-full lg:px-16 max-w-7xl md:px-12 items-center px-8 py-24"
-  id="bundle"
-  aria-label="bundle">
-  <div class="bg-black rounded-3xl overflow-hidden mx-auto">
-    <div class="relative px-4 py-12 mx-auto max-w-7xl sm:px-6 md:px-4">
-      <div class="grid items-end text-center">
-        <div>
-          <span class="text-white"> Lexington Themes</span>
-          <h2
-            class="w-full mt-4 text-4xl font-semibold tracking-tight text-white font-display lg:text-5xl">
-            UI Kit's &amp; <span class="lg:block">Tailwind themes.</span>
-          </h2>
-          <p class="max-w-2xl mx-auto mt-8 text-white/80 lg:text-xl">
-            For designers, developers, businesses &amp; personal use —
-            Beautifully designed HTML, Astro.js and Tailwind templates! Save
-            months of time and build your startup landing page in minutes.
-          </p>
+<section id="cta">
+  <div class="grid grid-cols-2 gap-x-8">
+    <div class="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Contact Us
+        </h2>
+        <p class="mt-2 text-lg leading-8 text-gray-600">
+          Interested? Get in touch with us!
+        </p>
+      </div>
+      <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          <div>
+            <label
+              for="first-name"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+              >First name *</label
+            >
+            <div class="mt-2.5">
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                autocomplete="given-name"
+                required=""
+                class="block w-full bg-gray-50 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              for="last-name"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+              >Last name</label
+            >
+            <div class="mt-2.5">
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                autocomplete="family-name"
+                class="block w-full bg-gray-50 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label
+              for="company"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+              >Company</label
+            >
+            <div class="mt-2.5">
+              <input
+                type="text"
+                name="company"
+                id="company"
+                autocomplete="organization"
+                class="block w-full bg-gray-50 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label
+              for="email"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+              >Email *</label
+            >
+            <div class="mt-2.5">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                required=""
+                class="block w-full bg-gray-50 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label
+              for="phone-number"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+              >Phone number</label
+            >
+            <div class="mt-2.5">
+              <input
+                type="tel"
+                name="phone-number"
+                id="phone-number"
+                autocomplete="tel"
+                class="block w-full bg-gray-50 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label
+              for="message"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+              >Message</label
+            >
+            <div class="mt-2.5">
+              <textarea
+                name="message"
+                id="message"
+                rows="4"
+                required=""
+                class="block w-full bg-gray-50 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              ></textarea>
+            </div>
+          </div>
         </div>
-        <div class="flex justify-center gap-3 mt-10 flex-col sm:flex-row">
-          <a
-            class="items-center h-12 justify-center font-medium rounded-xl text-black focus-visible:outline-white focus:outline-none inline-flex bg-white border-2 border-white duration-200 focus-visible:ring-black hover:bg-transparent hover:border-white/20 hover:text-white lg:w-auto px-6 py-3 text-center w-full"
-            href="https://lexingtonthemes.com/">
-            Browse templates
-          </a>
-          <a
-            class="items-center  h-12  justify-center font-medium rounded-xl focus-visible:outline-white focus:outline-none inline-flex duration-200 text-white lg:w-auto px-6 py-3 text-center text-white/80 w-full"
-            href="https://lexingtonthemes.com/pricing"
-            >Get the bundle for $199</a
-          >
+        <div class="mt-10">
+          <button
+            class="items-center h-12 justify-center rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-black border-2 border-black duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black px-6 py-3 text-center text-white w-full"
+            type="submit"
+            >Let's talk
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Hours & Address
+        </h2>
+        <p class="mt-2 text-lg leading-8 text-gray-600">
+          Interested? Get in touch with us!
+        </p>
+      </div>
+      <div class="mx-auto mt-16 max-w-xl sm:mt-20">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          <div class="sm:col-span-2">
+            <label
+              for="message"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+              >Monday: 9am - 5pm</label
+            >
+            <label
+              for="message"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+              >Tuesday: 9am - 5pm</label
+            >
+            <label
+              for="message"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+              >Wednesday: 9am - 5pm</label
+            >
+            <label
+              for="message"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+              >Thursday: 9am - 5pm</label
+            >
+            <label
+              for="message"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+              >Friday: 9am - 5pm</label
+            >
+            <label
+              for="message"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+              >Saturday: 9am - 5pm</label
+            >
+            <label
+              for="message"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+              >Sunday: 9am - 5pm</label
+            >
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto mt-16 max-w-xl sm:mt-20">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          <div class="sm:col-span-2">
+            <label
+              for="message"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+              >101 Lamar st, Maple, ON, L6A 1A7</label
+            >
+          </div>
         </div>
       </div>
     </div>
-    <img class="" src="./lexington.png" alt="" />
   </div>
 </section>

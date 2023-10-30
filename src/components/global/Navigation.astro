@@ -2,7 +2,8 @@
   <div class="w-full mx-auto md:px-12 px-8 max-w-7xl lg:px-16">
     <div
       x-data="{ open: false }"
-      class="relative flex flex-col w-full py-5 mx-auto bg-white md:items-center md:justify-between md:flex-row md:px-6">
+      class="relative flex flex-col w-full py-5 mx-auto bg-white md:items-center md:justify-between md:flex-row md:px-6"
+    >
       <div class="flex flex-row items-center justify-between lg:justify-start">
         <a href="/" class="lg:pr-8 text-black inline-flex items-center gap-3">
           <svg
@@ -10,7 +11,8 @@
             height="49"
             viewBox="0 0 30 29"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <g filter="url(#filter0_d_110_851)">
               <path
                 d="M2 10.66C2 7.24306 2 5.53458 2.67552 4.23415C3.24477 3.13829 4.13829 2.24477 5.23415 1.67552C6.53458 1 8.24306 1 11.66 1H18.34C21.7569 1 23.4654 1 24.7658 1.67552C25.8617 2.24477 26.7552 3.13829 27.3245 4.23415C28 5.53458 28 7.24306 28 10.66V17.34C28 20.7569 28 22.4654 27.3245 23.7658C26.7552 24.8617 25.8617 25.7552 24.7658 26.3245C23.4654 27 21.7569 27 18.34 27H11.66C8.24306 27 6.53458 27 5.23415 26.3245C4.13829 25.7552 3.24477 24.8617 2.67552 23.7658C2 22.4654 2 20.7569 2 17.34V10.66Z"
@@ -23,7 +25,8 @@
               x="2"
               y="1"
               width="26"
-              height="26">
+              height="26"
+            >
               <rect x="2" y="1" width="26" height="26" rx="6" fill="white"
               ></rect>
             </mask>
@@ -50,7 +53,8 @@
                 width="28.5"
                 height="28.5"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB">
+                color-interpolation-filters="sRGB"
+              >
                 <feFlood flood-opacity="0" result="BackgroundImageFix"
                 ></feFlood>
                 <feColorMatrix
@@ -81,7 +85,8 @@
                 width="28.812"
                 height="28.2021"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB">
+                color-interpolation-filters="sRGB"
+              >
                 <feFlood flood-opacity="0" result="BackgroundImageFix"
                 ></feFlood>
                 <feColorMatrix
@@ -167,16 +172,18 @@
               </filter>
             </defs>
           </svg>
-          <span class="font-bold font-display">AstroSaas</span>
+          <span class="font-bold font-display">Axle Accounting Inc.</span>
         </a>
         <button
           @click="open = !open"
-          class="inline-flex items-center justify-center p-2 text-gray-400 hover:text-black focus:outline-none focus:text-black lg:hidden">
+          class="inline-flex items-center justify-center p-2 text-gray-400 hover:text-black focus:outline-none focus:text-black lg:hidden"
+        >
           <svg
             class="w-6 h-6"
             stroke="currentColor"
             fill="none"
-            viewBox="0 0 24 24">
+            viewBox="0 0 24 24"
+          >
             <path
               :class="{'hidden': open, 'inline-flex': !open }"
               class="inline-flex"
@@ -196,34 +203,16 @@
       </div>
       <nav
         :class="{'flex': open, 'hidden': !open}"
-        class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row">
+        class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row"
+      >
         <a
           class="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-black hover:text-accent-400 lg:ml-auto"
-          href="/#features">Features</a
-        >
-        <a
-          class="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-black hover:text-accent-400"
           href="/#pricing">Pricing</a
         >
-
         <a
           class="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-black hover:text-accent-400"
-          href="/faq">
-          Faq</a
+          href="/#cta">Contact</a
         >
-
-        <div class="inline-flex items-center gap-2 list-none lg:ml-auto">
-          <a
-            href="/signup"
-            class="block px-4 py-2 mt-2 text-sm font-medium text-black md:mt-0 hover:text-accent-400 focus:outline-none focus:shadow-outline">
-            Sign up
-          </a>
-          <a
-            href="/login"
-            class="inline-flex items-center h-8 justify-center px-4 py-2 text-sm font-medium text-black bg-gray-100 rounded-lg group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-gray-50 active:bg-gray-200 active:text-accent-400 focus-visible:outline-black">
-            Log in
-          </a>
-        </div>
       </nav>
     </div>
   </div>
